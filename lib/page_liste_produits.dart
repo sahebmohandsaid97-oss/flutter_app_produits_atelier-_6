@@ -39,4 +39,23 @@ class ListProduits extends StatelessWidget {
                 produit.nom,
                 style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
               ),
-              
+              subtitle: Text("${produit.prix} \$"),
+              trailing: ElevatedButton(
+                child: Text("Voir"),
+                onPressed: () {
+                  // Navigation vers la page Détails
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => DetailsProduit(produit: produit),
+                    ),
+                  );
+                },
+              ),
+            ),
+          );
+        },
+      ),
+    );
+  }
+}
