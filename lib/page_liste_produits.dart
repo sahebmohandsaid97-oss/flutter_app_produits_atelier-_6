@@ -11,3 +11,15 @@ class ListProduits extends StatelessWidget {
       description: "Laptop puissant pour travail et gaming.",
       prix: 1200.0,
     ),
+    Produit(
+      nom: "Smartphone",
+      description: "Téléphone nouvelle génération avec triple caméra.",
+      prix: 900.0,
+    ),
+    Produit(
+      nom: "Casque Bluetooth",
+      description: "Casque sans fil avec réduction de bruit.",
+      prix: 150.0,
+    ),
+  ];
+}
